@@ -1,0 +1,47 @@
+arch: transformer_multibranch_v2_wmt_en_de
+no-progress-bar: true
+
+share-all-embeddings: True
+log-interval: 1000
+optimizer: adam
+adam-betas: (0.9, 0.98)
+clip-norm: 0.0
+weight-decay: 0.0
+criterion: label_smoothed_cross_entropy
+label-smoothing: 0.1
+min-lr: 1e-09
+update-freq: 16
+
+keep-last-epochs: 20
+ddp-backend: no_c10d
+max-tokens: 4096
+lr-scheduler: cosine
+warmup-init-lr: 1e-7
+warmup-updates: 10000
+max-update: 50000
+lr-shrink: 1
+max-lr: 0.001
+lr: 1e-7
+min-lr: 1e-9
+t-mult: 1
+lr-period-updates: 40000
+
+dropout: 0.04
+attention-dropout: 0.03
+
+fp16: false
+
+weight-dropout: 0.03
+encoder-glu: 1
+decoder-glu: 1
+encoder-branch-type: [attn:1:100:4, dynamic:default:100:4]
+decoder-branch-type: [attn:1:100:4, dynamic:default:100:4]
+conv-linear: true
+
+encoder-embed-dim: 200
+encoder-ffn-embed-dim: 200
+decoder-embed-dim: 200
+decoder-ffn-embed-dim: 200
+
+
+num-workers: 4
