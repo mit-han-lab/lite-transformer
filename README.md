@@ -9,7 +9,7 @@
 ```
 
 ## Overview
-We release the PyTorch code for the Lite Transformer. [[Paper](https://openreview.net/pdf?id=ByeMPlHKPH)|[Website](https://zhwu.me/pubs/mbt/index.html)]:
+We release the PyTorch code for the Lite Transformer. [[Paper](https://arxiv.org/abs/2004.11886v1)|[Website](https://zhwu.me/pubs/mbt/index.html)]:
 ![overview](figures/overview.png?raw=true "overview")
 
 ### Consistent Improvement by Tradeoff Curves
