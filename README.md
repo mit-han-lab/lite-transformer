@@ -73,6 +73,14 @@ We follow the data pre-processing in [fairseq](github.com/pytorch/fairseq). One 
 bash configs/wmt16.en-de/prepare.sh [path to the downloaded zip file]
 ```
 
+#### WIKITEXT-103
+As the language model task has many additional codes, we place it in another branch: `language-model`.
+We follow the data pre-processing in [fairseq](github.com/pytorch/fairseq).  To download and preprocess the data, one can run
+```bash
+git checkout language-model
+bash configs/wikitext-103/prepare.sh
+```
+
 ### Testing
 
 For example, to test the models on WMT'14 En-Fr, one can run
@@ -81,7 +89,11 @@ configs/wmt14.en-fr/test.sh [path to the model checkpoints] [gpu-id] [test|valid
 ```
 For instance, to evaluate Lite Transformer on GPU 0 (with the BLEU score on test set of WMT'14 En-Fr), one can run
 ```bash
-configs/wmt14.en-fr/test.sh en-fr-496.pt 0 test
+configs/wmt14.en-fr/test.sh embed496/ 0 test
+```
+We provide several pretrained models at the bottom. You can download the model and extract the file by
+```bash
+tar -xzvf [filename]
 ```
 
 ### Training
@@ -136,4 +148,5 @@ We provide the checkpoints for our Lite Transformer reported in the paper:
 | | 360M | 39.1 | [download](https://drive.google.com/open?id=10Fd1iXFiOtuwjxm1K8S2RqiEeCuDhxYn) |
 | | 527M | 39.6 | [download](https://drive.google.com/open?id=10HYj-rcJ4CIPp-BtpckkmYIgzH5Urrz0)|
 | [CNN / DailyMail](https://github.com/abisee/cnn-dailymail) | 800M | 38.3 (R-L) | [download](https://drive.google.com/open?id=14sQZ_H7HMQGhL7Ko1WkktWUvbEslOeu9)|
+| [WIKITEXT-103](https://einstein.ai/research/the-wikitext-long-term-dependency-language-modeling-dataset) | 1147M | 22.2 (PPL) | [download](https://drive.google.com/file/d/14gT1j5VERgtDFfo2Ef1yOiliT9Y2eKe_/view?usp=sharing)|
 
