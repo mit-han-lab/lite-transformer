@@ -12,8 +12,10 @@ from .positional_embedding import PositionalEmbedding
 from .learned_positional_embedding import LearnedPositionalEmbedding
 from .sinusoidal_positional_embedding import SinusoidalPositionalEmbedding
 from .multibranch import MultiBranch
+from .adaptive_softmax import AdaptiveSoftmax
 
 __all__ = [
+    'AdaptiveSoftmax',
     'DynamicConv1dTBC',
     'DynamicConv',
     'gelu',

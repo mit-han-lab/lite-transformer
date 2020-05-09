@@ -18,6 +18,7 @@ from fairseq.models import (
     register_model_architecture,
 )
 from fairseq.modules import (
+    AdaptiveSoftmax,
     LayerNorm,
     PositionalEmbedding,
     SinusoidalPositionalEmbedding,
@@ -413,7 +414,17 @@ class TransformerDecoder(FairseqIncrementalDecoder):
             if embed_dim != self.output_embed_dim and not args.tie_adaptive_weights else None
             
 
-        if not self.share_input_output_embed:
+        if args.adaptive_softmax_cutoff is not None:
+            self.adaptive_softmax = AdaptiveSoftmax(
+                len(dictionary),
+                self.output_embed_dim,
+                options.eval_str_list(args.adaptive_softmax_cutoff, type=int),
+                dropout=args.adaptive_softmax_dropout,
+                adaptive_inputs=embed_tokens if args.tie_adaptive_weights else None,
+                factor=args.adaptive_softmax_factor,
+                tie_proj=args.tie_adaptive_proj,
+            )
+        elif not self.share_input_output_embed:
             self.embed_out = nn.Parameter(torch.Tensor(len(dictionary), self.output_embed_dim))
             nn.init.normal_(self.embed_out, mean=0, std=self.output_embed_dim ** -0.5)
 
