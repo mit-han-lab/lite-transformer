@@ -4,10 +4,10 @@
 
 DATA_DIR=data
 TEXT=$DATA_DIR/wmt16_en_de_bpe32k
-ZIP=${1:-data/wmt16_en_de_bpe32k.zip}
+TAR=${1:-data/wmt16_en_de_bpe32k.tar.gz}
 mkdir -p $TEXT
-if [ "$ZIP" == "" ]; then ZIP=data/wmt16_en_de_bpe32k; fi
-unzip $ZIP -d $DATA_DIR
+if [ "$TAR" == "" ]; then TAR=data/wmt16_en_de_bpe32k.tar.gz; fi
+tar -xvzf $TAR -C "$DATA_DIR"
 
 fairseq-preprocess --source-lang en --target-lang de \
   --trainpref $TEXT/train.tok.clean.bpe.32000 \
