@@ -9,7 +9,6 @@ clip-norm: 0.0
 weight-decay: 0.0
 criterion: label_smoothed_cross_entropy
 label-smoothing: 0.1
-min-lr: 1e-09
 update-freq: 16
 
 keep-last-epochs: 10
