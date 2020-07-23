@@ -97,11 +97,11 @@ setup(
     test_suite='tests',
     entry_points={
         'console_scripts': [
-            'fairseq-eval-lm = fairseq_cli.eval_lm:cli_main',
-            'fairseq-generate = fairseq_cli.generate:cli_main',
-            'fairseq-preprocess = fairseq_cli.preprocess:cli_main',
-            'fairseq-score = fairseq_cli.score:main',
-            'fairseq-train = fairseq_cli.train:cli_main',
+            'fairseq-eval-lm = eval_lm:cli_main',
+            'fairseq-generate = generate:cli_main',
+            'fairseq-preprocess = preprocess:cli_main',
+            'fairseq-score = score:main',
+            'fairseq-train = train:cli_main',
         ],
     },
     cmdclass={'build_ext': my_build_ext},
