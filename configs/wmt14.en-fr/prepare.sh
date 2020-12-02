@@ -47,7 +47,7 @@ fi
 src=en
 tgt=fr
 lang=en-fr
-prep=data/wmt14_en_fr/tokenized
+prep=data/wmt14_en_fr/wmt14.tokenized.en-fr
 orig=data/wmt14_en_fr/orig
 tmp=$prep/tmp
 
