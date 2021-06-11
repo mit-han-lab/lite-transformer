@@ -1,6 +1,6 @@
   
 checkpoint_path=$1
-output_path=$checkpoint/exp
+output_path=$checkpoint_path/exp
 gpu=${2:-0}
 dataset=${3:-"test"}
 mkdir -p $output_path
