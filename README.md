@@ -144,7 +144,7 @@ We provide the checkpoints for our Lite Transformer reported in the paper:
 | [WMT'14 En-Fr](http://statmt.org/wmt14/translation-task.html#Download) | 90M | 35.3 |[download](https://drive.google.com/open?id=10Iotg0dnt9sJTqEghtNhIIwJL1R3LYBe) |
 | | 360M | 39.1 | [download](https://drive.google.com/open?id=10WMpIrdnDRWa_7afYJsqiiONdWlTLrJs) |
 | | 527M | 39.6 | [download](https://drive.google.com/open?id=10Wfv80wOTkL-hkXNyxM8IVlcroHuuUvA) |
-| [WMT'16 En-De](https://drive.google.com/uc?export=download&id=0B_bZck-ksdkpM25jRUN2X2UxMm8) | 90M | 22.5 | [download](https://drive.google.com/open?id=10ArxzUsMZ8gDe6zw5d3xTHYmeUasys1q) |
+| [WMT'16 En-De](https://statmt.org/wmt16/translation-task.html#Download) | 90M | 22.5 | [download](https://drive.google.com/open?id=10ArxzUsMZ8gDe6zw5d3xTHYmeUasys1q) |
 | | 360M | 25.6 | [download](https://drive.google.com/open?id=10Fd1iXFiOtuwjxm1K8S2RqiEeCuDhxYn) |
 | | 527M | 26.5 | [download](https://drive.google.com/open?id=10HYj-rcJ4CIPp-BtpckkmYIgzH5Urrz0)|
 | [CNN / DailyMail](https://github.com/abisee/cnn-dailymail) | 800M | 38.3 (R-L) | [download](https://drive.google.com/open?id=14sQZ_H7HMQGhL7Ko1WkktWUvbEslOeu9)|
