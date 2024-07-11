@@ -1,4 +1,7 @@
-# Lite Transformer with Long-Short Range Attention
+# Lite Transformer
+
+### [paper](https://arxiv.org/abs/2004.11886) | [website](https://hanlab.mit.edu/projects/litetransformer/) | [slides]([https://hanlab.mit.edu/projects/litetransformer/](https://hanlab.mit.edu/projects/litetransformer/Presentation_LiteTransformer.pdf)) 
+
 ```
 @inproceedings{Wu2020LiteTransformer,
   title={Lite Transformer with Long-Short Range Attention},
@@ -9,7 +12,7 @@
 ```
 
 ## Overview
-We release the PyTorch code for the Lite Transformer. [[Paper](https://arxiv.org/abs/2004.11886)|[Website](https://hanlab.mit.edu/projects/litetransformer/)|[Slides](https://hanlab.mit.edu/projects/litetransformer/Presentation_LiteTransformer.pdf)]:
+
 ![overview](figures/overview.png?raw=true "overview")
 
 ## How to Use
