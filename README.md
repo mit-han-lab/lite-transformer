@@ -1,6 +1,6 @@
 # Lite Transformer
 
-### [paper](https://arxiv.org/abs/2004.11886) | [website](https://hanlab.mit.edu/projects/litetransformer/) | [slides]([https://hanlab.mit.edu/projects/litetransformer/](https://hanlab.mit.edu/projects/litetransformer/Presentation_LiteTransformer.pdf)) 
+### [paper](https://arxiv.org/abs/2004.11886) | [website](https://hanlab.mit.edu/projects/litetransformer/) | [slides](https://hanlab.mit.edu/projects/litetransformer/Presentation_LiteTransformer.pdf)
 
 ```
 @inproceedings{Wu2020LiteTransformer,
