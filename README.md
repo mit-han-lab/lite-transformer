@@ -12,13 +12,6 @@
 We release the PyTorch code for the Lite Transformer. [[Paper](https://arxiv.org/abs/2004.11886)|[Website](https://hanlab.mit.edu/projects/litetransformer/)|[Slides](https://hanlab.mit.edu/projects/litetransformer/Presentation_LiteTransformer.pdf)]:
 ![overview](figures/overview.png?raw=true "overview")
 
-### Consistent Improvement by Tradeoff Curves
-![tradeoff](figures/tradeoff.png?raw=true "tradeoff")
-### Save 20000x Searching Cost of Evolved Transformer
-![et](figures/et.png?raw=true "et")
-### Further Compress Transformer by 18.2x
-![compression](figures/compression.png?raw=true "compression")
-
 ## How to Use
 
 ### Prerequisite
